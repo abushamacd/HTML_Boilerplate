@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drou</title>
+
+    <!-- Tailwind -->
+    <script src="./assets/js/tailwind.js"></script>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+
+<body class="max-w-[1600px] mx-auto ">
+    <!-- annuancement bar -->
+    <div class="ab px-[40px] border-b md:flex items-center hidden">
+        <div class="md:w-1/2 text-center md:text-start text-[#444] text-[14px] py-[10px]">
+            <p>We are open with limited hours and staff.</p>
+        </div>
+        <div class="w-1/2 text-[13px] font-medium ab_action">
+            <ul class="flex gap-3 justify-end relative">
+                <li class="border-r pr-4 currency_switcher">
+                    USD
+                    <i class="fa-solid fa-chevron-down relative top-[-1px] ml-1"></i>
+                    <ul class="currency_list absolute w-[200px] bg-white px-4 py-5 rounded-md font-semibold">
+                        <li class="mb-2 text-[#444] hover:text-[#e52e06] transition-all duration-500">
+                            USD - Doller
+                        </li>
+                        <li class="mb-2 text-[#444] hover:text-[#e52e06] transition-all duration-500">
+                            USD - Doller
+                        </li>
+                        <li class="mb-2 text-[#444] hover:text-[#e52e06] transition-all duration-500">
+                            USD - Doller
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-r pr-4">
+                    <a href="https://www.google.com/maps">
+                        <i class="fa-solid fa-location-arrow mr-1"></i>
+                        Store location</a>
+                </li>
+                <li class="">
+                    <a href="tel:+">
+                        <i class="fa-solid fa-phone-volume mr-1"></i> (08)123 456 7890</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header id="myHeader" class="header bg-white md:px-[40px] px-[20px] md:py-0 p-4 flex justify-between items-center">
+        <div class="w-2/12 header_left">
+            <a href="" class="logo">
+                <img class="max-w-[150px]"
+                    src="https://drou-electronics-store.myshopify.com/cdn/shop/files/logo_300x300.png" alt="" />
+            </a>
+        </div>
+        <div class="w-8/12 hidden md:block ">
+            <nav class="mainmenu">
+                <ul class="flex justify-center gap-5 relative">
+                    <li class="menu_item text-[15px] font-semibold text-[#444] hover:text-[#e52e06] duration-300">
+                        <a href="" class="">Home</a>
+                    </li>
+                    <li class="menu_item text-[15px] font-medium text-[#444] hover:text-[#e52e06] duration-300 ">
+                        <a href="" class="">Collection<i
+                                class="fa-solid fa-chevron-down text-[10px] ml-1 relative top-[-2px] font-bold"></i></a>
+                        <ul class="dropdown px-5 py-6 absolute min-w-[200px]">
+                            <li
+                                class="dropdown_item text-[15px] font-medium text-[#777] hover:text-[#e52e06] duration-300 mb-3">
+                                <a href="">Item 1</a>
+                            </li>
+                            <li
+                                class="dropdown_item text-[15px] font-medium text-[#777] hover:text-[#e52e06] duration-300 mb-3">
+                                <a href="">Item 1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item text-[15px] font-medium text-[#444] hover:text-[#e52e06] duration-300 ">
+                        <a href="" class="">Collection 2<i
+                                class="fa-solid fa-chevron-down text-[10px] ml-1 relative top-[-2px] font-bold"></i></a>
+                        <ul class="dropdown px-5 py-6 absolute min-w-[200px]">
+                            <li
+                                class="dropdown_item text-[15px] font-medium text-[#777] hover:text-[#e52e06] duration-300 mb-3">
+                                <a href="">Item 1</a>
+                            </li>
+                            <li
+                                class="dropdown_item text-[15px] font-medium text-[#777] hover:text-[#e52e06] duration-300 mb-3">
+                                <a href="">Item 1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item text-[15px] font-medium text-[#444] hover:text-[#e52e06] duration-300">
+                        <a href="" class="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="w-2/12 header_right flex justify-end gap-4">
+            <div id="open-search" class="search hidden md:block">
+                <i class="fa-solid fa-magnifying-glass text-[#444] hover:text-[#e52e06] duration-300 text-[22px]"></i>
+            </div>
+            <div class="wishlist">
+                <a href="">
+                    <i class="fa-regular fa-heart text-[#444] hover:text-[#e52e06] duration-300 text-[22px]"></i></a>
+            </div>
+            <div class="cart">
+                <a href="" class="relative">
+                    <i class="fa-brands fa-opencart text-[#444] hover:text-[#e52e06] duration-300 text-[22px]"></i>
+                    <span
+                        class="cart_count absolute bg-[#e52e06] text-white h-[19px] w-[19px] text-center rounded-full text-[13px] left-[12px] top-[5px]">
+                        0
+                    </span>
+                </a>
+            </div>
+            <div class="account">
+                <a href="">
+                    <i class="fa-regular fa-user text-[#444] hover:text-[#e52e06] duration-300 text-[22px]"></i></a>
+            </div>
+            <div id="mobile_menu_open" class="menu md:hidden block">
+                <i class="fa-solid fa-bars text-[#444] hover:text-[#e52e06]  duration-300 text-[22px]"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div id="search-overlay" class="search-overlay">
+            <div class="search-overlay-content">
+                <input type="text" id="search-input"
+                    class="placeholder:italic border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#e52e06] focus:border-[#e52e06]"
+                    placeholder="Search your item">
+                <button id="tigger-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+            <button id="close-search"><i class="fa-regular fa-circle-xmark text-3xl mt-4"></i></button>
+        </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="mobile_menu bg-[#000000b6] h-screen w-[85%] fixed top-0">
+        <div class="absolute right-[-30px]"><i id="mobile_menu_close" class="fa-solid fa-xmark text-[30px]"></i>
+        </div>
+        <div class="w-full text-center md:text-start text-[#fff] text-[14px] py-[10px]">
+            <p>We are open with limited hours and staff.</p>
+        </div>
+
+        <div class="search_input flex justify-center py-5">
+            <input type="text" id="search-input" class="focus:border-0 !w-[80%]" placeholder="Search your item">
+            <button id="tigger-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <nav class="mobilemenu h-[68%] overflow-y-auto">
+            <ul class="px-6 py-4 text-white text-[18px]">
+                <li class="mb-4"><a href="">Home</a></li>
+                <li class="mb-4">
+                    <span class="mobile_dropdown_trigger flex justify-between items-center">
+                        <a href="">Collection</a>
+                        <i class="fa-solid fa-sort-down relative top-[-05px]"></i>
+                    </span>
+                    <ul class="mobile_dropdown px-5 pt-4">
+                        <li class="mb-3"><a href="">Item 1</a></li>
+                        <li class="mb-3"><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li class="mb-4">
+                    <span class="mobile_dropdown_trigger flex justify-between items-center">
+                        <a href="">Collection</a>
+                        <i class="fa-solid fa-sort-down relative top-[-05px]"></i>
+                    </span>
+                    <ul class="mobile_dropdown px-5 pt-4">
+                        <li class="mb-3"><a href="">Item 1</a></li>
+                        <li class="mb-3"><a href="">Item 2</a></li>
+                        <li class="mb-3"><a href="">Item 1</a></li>
+                        <li class="mb-3"><a href="">Item 2</a></li>
+                        <li class="mb-3"><a href="">Item 1</a></li>
+                        <li class="mb-3"><a href="">Item 2</a></li>
+                        <li class="mb-3"><a href="">Item 1</a></li>
+                        <li class="mb-3"><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li class="mb-4">
+                    <span class="mobile_dropdown_trigger
+                    mobile_dropdown_trigger flex justify-between items-center">
+                        <a href="">Collection</a>
+                        <i class="fa-solid fa-sort-down relative top-[-05px]"></i>
+                    </span>
+                    <ul class="mobile_dropdown px-5 pt-4">
+                        <li class="mb-3"><a href="">Item 1</a></li>
+                        <li class="mb-3"><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li class="mb-4"><a href="">About</a></li>
+            </ul>
+        </nav>
+        <div class="address border-t mt-4 text-white p-5">
+            <ul class="flex flex-col gap-3 justify-end relative">
+                <li class="pr-4 currency_switcher">
+                    USD
+                    <i class="fa-solid fa-chevron-down relative top-[-1px] ml-1"></i>
+                    <ul class="currency_list absolute w-[200px] bg-[#000000b6] px-4 py-5 rounded-md font-semibold">
+                        <li class="mb-2">
+                            USD - Doller
+                        </li>
+                        <li class="mb-2">
+                            USD - Doller
+                        </li>
+                        <li class="mb-2">
+                            USD - Doller
+                        </li>
+                    </ul>
+                </li>
+                <li class="pr-4">
+                    <a href="https://www.google.com/maps">
+                        <i class="fa-solid fa-location-arrow mr-1"></i>
+                        Store location</a>
+                </li>
+                <li class="">
+                    <a href="tel:+">
+                        <i class="fa-solid fa-phone-volume mr-1"></i> (08)123 456 7890</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- main -->
+    <main id="myContent" class="content">
+        <!-- banner -->
+        <div class=" h-[2000px]">
+            <img src="https://drou-electronics-store.myshopify.com/cdn/shop/files/slide62_2a456b8c-daca-4348-9115-8bf0bbbd5d91.jpg?v=1674276678"
+                alt="banner" class="w-full">
+        </div>
+    </main>
+
+    <footer class="px-[25px] py-[50px] bg-[#1C1B1B] flex flex-col md:flex-row gap-1 text-white">
+        <div class="w-full md:w-[25%] py-4 pl-0 pr-6">
+            <a href="" class="logo">
+                <img class="max-w-[150px]"
+                    src="https://drou-electronics-store.myshopify.com/cdn/shop/files/logo_copy_large.png" alt="" />
+            </a>
+            <p class="mt-6 text-white text-[14px] text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Velit iusto ea obcaecati vel magni perferendis excepturi a esse, sint blanditiis. Impedit earum
+                assumenda, porro nesciunt praesentium temporibus dolorum placeat amet!</p>
+        </div>
+        <div class="w-full md:w-[22%] p-4">
+            <h3 class="menu_title font-bold text-[20px] capitalize">Information</h3>
+            <ul class="mt-6">
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full md:w-[22%] p-4">
+            <h3 class="menu_title font-bold text-[20px] capitalize">Store Policy</h3>
+            <ul class="mt-6">
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+                <li class="mb-2"><a href=""
+                        class="capitalize text-[15px] hover:text-[#e52e06] duration-300 transition-all">menu 1</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full md:w-[31%] p-4">
+            <h3 class="menu_title font-bold text-[20px]">Sign Up for Latest News</h3>
+            <form action="#" class="space-y-4 mt-6">
+                <div>
+                    <input placeholder="Type your email" type="email" id="email" name="email" required
+                        class="mt-1 text-black block placeholder:italic w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#e52e06] focus:border-[#e52e06] sm:text-sm">
+
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full font-semibold bg-[#e52e06] text-white py-2 px-4 rounded-md hover:bg-white hover:text-black duration-300 transition-all">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <p class=" italic text-[12px] mt-2">N.B: Your email is secure to us</p>
+        </div>
+    </footer>
+
+    <button class="bg-[#e52e06] transition-all duration-300" onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery-migrate.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/font-awesome.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        // Function to load CSS file dynamically
+        function loadCSS(url) {
+            var link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = url;
+            document.head.appendChild(link);
+        }
+
+        // Wait for all resources (including other CSS and JS files) to load
+        window.addEventListener("load", function () {
+            // Load main.css after the page has fully loaded
+            loadCSS("./assets/css/main.css");
+        });
+    </script>
+</body>
+
+</html>
