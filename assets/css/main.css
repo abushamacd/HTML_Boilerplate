@@ -159,6 +159,7 @@
   top: 0;
   width: 100%;
   padding: 0px 25px;
+  z-index: 99;
   transition: padding 0.3s;
 }
 
@@ -184,6 +185,19 @@
 
 #myBtn:hover {
   background-color: #555;
+}
+/* banner */
+.slick-dots li button:before {
+  font-size: 30px;
+  color: #e52e06;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e52e06;
+}
+
+.slick-dots {
+  bottom: 10px;
 }
 
 /* responsive */

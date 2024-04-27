@@ -73,7 +73,7 @@
                     <li class="menu_item text-[15px] font-medium text-[#444] hover:text-[#e52e06] duration-300 ">
                         <a href="" class="">Collection<i
                                 class="fa-solid fa-chevron-down text-[10px] ml-1 relative top-[-2px] font-bold"></i></a>
-                        <ul class="dropdown px-5 py-6 absolute min-w-[200px]">
+                        <ul class="dropdown rounded-b bg-[#ffffff] px-5 py-6 absolute min-w-[200px]">
                             <li
                                 class="dropdown_item text-[15px] font-medium text-[#777] hover:text-[#e52e06] duration-300 mb-3">
                                 <a href="">Item 1</a>
@@ -87,7 +87,7 @@
                     <li class="menu_item text-[15px] font-medium text-[#444] hover:text-[#e52e06] duration-300 ">
                         <a href="" class="">Collection 2<i
                                 class="fa-solid fa-chevron-down text-[10px] ml-1 relative top-[-2px] font-bold"></i></a>
-                        <ul class="dropdown px-5 py-6 absolute min-w-[200px]">
+                        <ul class="dropdown  rounded-b bg-[#ffffff] px-5 py-6 absolute min-w-[200px]">
                             <li
                                 class="dropdown_item text-[15px] font-medium text-[#777] hover:text-[#e52e06] duration-300 mb-3">
                                 <a href="">Item 1</a>
@@ -145,7 +145,7 @@
     </div>
 
     <!-- mobile menu -->
-    <div id="mobile-menu" class="mobile_menu bg-[#000000b6] h-screen w-[85%] fixed top-0">
+    <div id="mobile-menu" class="mobile_menu bg-[#000000b6] h-screen w-[85%] fixed top-0 z-[100]">
         <div class="absolute right-[-30px]"><i id="mobile_menu_close" class="fa-solid fa-xmark text-[30px]"></i>
         </div>
         <div class="w-full text-center md:text-start text-[#fff] text-[14px] py-[10px]">
@@ -234,12 +234,65 @@
     <!-- main -->
     <main id="myContent" class="content">
         <!-- banner -->
-        <div class=" h-[2000px]">
-            <img src="https://drou-electronics-store.myshopify.com/cdn/shop/files/slide62_2a456b8c-daca-4348-9115-8bf0bbbd5d91.jpg?v=1674276678"
-                alt="banner" class="w-full">
+        <div class="banner banner_carousel">
+            <!-- single Image -->
+            <div class="relative h-[600px] bg-cover bg-center"
+                style="background-image: url('https://drou-electronics-store.myshopify.com/cdn/shop/files/slide62_2a456b8c-daca-4348-9115-8bf0bbbd5d91.jpg');">
+
+                <div class="absolute inset-0 bg-[#323232] opacity-25"></div>
+
+                <div class="absolute inset-0 flex items-center justify-start p-[40px]">
+                    <div class="text-start text-[#323232] w-1/2">
+                        <h2 class="text-lg font-medium">SALE UP TO 30% OFF</h2>
+                        <p class="text-5xl font-semibold tracking-wider my-6">Apple Watch Series </p>
+                        <p class="text-[18px] ">Feature packed at a better value than ever
+                            Powerful sensors to monitor your fitness</p>
+                        <div class="mt-12"><a href=""
+                                class="bg-[#e52e06] hover:bg-[#323232] text-[#fff] py-5 px-[40px] font-bold rounded-full transition-all duration-300 ">Shop
+                                Now <i class="fa-solid fa-arrow-right ml-1"></i> </a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- single Image -->
+            <div class="relative h-[600px] bg-cover bg-center"
+                style="background-image: url('https://drou-electronics-store.myshopify.com/cdn/shop/files/slide62_2a456b8c-daca-4348-9115-8bf0bbbd5d91.jpg');">
+
+                <div class="absolute inset-0 bg-[#323232] opacity-25"></div>
+
+                <div class="absolute inset-0 flex items-center justify-start p-[40px]">
+                    <div class="text-start text-[#323232] w-1/2">
+                        <h2 class="text-lg font-medium">SALE UP TO 30% OFF</h2>
+                        <p class="text-5xl font-semibold tracking-wider my-6">Apple Watch Series 2 </p>
+                        <p class="text-[18px] ">Feature packed at a better value than ever
+                            Powerful sensors to monitor your fitness</p>
+                        <div class="mt-12"><a href=""
+                                class="bg-[#e52e06] hover:bg-[#323232] text-[#fff] py-5 px-[40px] font-bold rounded-full transition-all duration-300 ">Shop
+                                Now <i class="fa-solid fa-arrow-right ml-1"></i> </a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- single Image -->
+            <div class="relative h-[600px] bg-cover bg-center"
+                style="background-image: url('https://drou-electronics-store.myshopify.com/cdn/shop/files/slide62_2a456b8c-daca-4348-9115-8bf0bbbd5d91.jpg');">
+
+                <div class="absolute inset-0 bg-[#323232] opacity-25"></div>
+
+                <div class="absolute inset-0 flex items-center justify-start p-[40px]">
+                    <div class="text-start text-[#323232] w-1/2">
+                        <h2 class="text-lg font-medium">SALE UP TO 30% OFF</h2>
+                        <p class="text-5xl font-semibold tracking-wider my-6">Apple Watch Series 3 </p>
+                        <p class="text-[18px] ">Feature packed at a better value than ever
+                            Powerful sensors to monitor your fitness</p>
+                        <div class="mt-12"><a href=""
+                                class="bg-[#e52e06] hover:bg-[#323232] text-[#fff] py-5 px-[40px] font-bold rounded-full transition-all duration-300 ">Shop
+                                Now <i class="fa-solid fa-arrow-right ml-1"></i> </a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
+    <!-- footer -->
     <footer class="px-[25px] py-[50px] bg-[#1C1B1B] flex flex-col md:flex-row gap-1 text-white">
         <div class="w-full md:w-[25%] py-4 pl-0 pr-6">
             <a href="" class="logo">

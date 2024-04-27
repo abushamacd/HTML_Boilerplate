@@ -1,5 +1,6 @@
-$(".ab_carousel").slick({ dots: true });
+// $(".ab_carousel").slick({ dots: true });
 
+// search overlay
 document.addEventListener("DOMContentLoaded", () => {
   const qs = (selector) => document.querySelector(selector);
   const searchOverlay = qs("#search-overlay");
@@ -66,3 +67,6 @@ window.onscroll = () => {
 const topFunction = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// banner
+$(".banner_carousel").slick({ dots: true, arrows: false });
